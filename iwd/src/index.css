@@ -1,0 +1,192 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+
+body {
+  min-height: 100vh;
+  overflow-x: hidden;
+  background-color: #FAFAFA;
+}
+
+.App,
+#root {
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Navigation Bar */
+.navigation {
+  @apply w-full;
+}
+
+.navcontainer {
+  @apply flex h-16 items-center justify-between px-8 py-10 w-full bg-white;
+}
+
+.navlogo {
+  @apply flex-1 md:flex md:items-center md:gap-12;
+}
+
+.navitem {
+  @apply text-gray-900 transition hover:text-green-900 font-semibold mx-2;
+}
+
+/* Hero */
+.Hero {
+  @apply w-full px-14 py-28 flex md:flex-row items-center md:gap-8 justify-items-center flex-col-reverse;
+}
+
+.Hero h1 {
+  @apply my-4 text-3xl font-bold text-gray-900;
+}
+
+.Hero-left {
+  @apply md:w-1/2 flex flex-col md:items-start md:text-left gap-4 text-center items-center;
+}
+
+#movement {
+  @apply text-orange-900;
+}
+
+#planet {
+  @apply text-green-900;
+}
+
+.Hero p  {
+  @apply text-gray-800 text-base;
+}
+
+.discover {
+  @apply bg-green-900 text-white font-bold rounded md:py-4 md:px-14 py-6 px-16;
+}
+
+.hero-svg {
+  @apply  w-full;
+}
+
+.logo {
+  @apply h-12;
+}
+
+.Separator {
+  @apply  w-full bg-green-900 text-white text-center py-20 px-14 flex flex-col gap-8;
+}
+
+.Separator h1 {
+  @apply  text-2xl font-bold;
+}
+
+.Separator p {
+  @apply text-lg;
+}
+
+.Services .container {
+  @apply text-lg flex flex-col md:flex-row md:justify-center md:items-end w-full items-center  gap-12 md:gap-24 mb-12;
+}
+
+.Services h1 {
+  @apply my-4 mb-16 text-3xl font-bold text-gray-900;
+}
+
+.Services {
+  @apply text-lg my-16 flex flex-col items-center;
+}
+
+.Programs {
+  @apply text-lg my-16 flex flex-col items-center;
+}
+
+.Contacts {
+  @apply my-16 flex flex-col items-center;
+}
+
+.Contacts .container {
+  @apply my-10 flex flex-col items-center;
+}
+
+.Contacts .contact {
+  @apply text-lg font-bold text-gray-900 text-center;
+}
+
+.Contacts .SM IMG {
+  @apply w-96 my-14;
+}
+
+.rights {
+  @apply my-4 text-green-900;
+}
+.Programs h1, .Contacts h1 {
+  @apply my-4 mb-16 text-3xl font-bold text-green-900;
+}
+
+.Programs .container {
+  @apply text-lg my-16 flex flex-col items-center gap-12 md:gap-0 md:flex-row md:items-end md:justify-center;
+}
+
+.Services .card {
+  @apply rounded-lg bg-white w-5/6 md:w-1/3 px-12 pb-10 h-96 flex flex-col items-center justify-end;
+}
+
+.Programs .card {
+  @apply  px-12 flex flex-col md:items-center gap-4 justify-end justify-items-center ;
+}
+
+.Programs .card img {
+  @apply  justify-self-center;
+}
+
+.Services .card h2, .Programs .card h2 {
+  @apply text-gray-900 font-bold;
+}
+
+.Services{
+  background-color: #FAFAFA;;
+}
+
+.Carousel {
+  @apply rounded-lg bg-white w-5/6 md:w-3/4 px-12 py-12 text-center flex flex-col items-center gap-2;
+}
+
+.Carousel h1 {
+  @apply text-green-900;
+}
+
+.Carousel h2 {
+  @apply text-gray-900 font-semibold;
+}
+
+.Carousel img {
+  @apply my-4;
+}
+
